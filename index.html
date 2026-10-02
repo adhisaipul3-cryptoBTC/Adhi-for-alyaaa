@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>www.Adhi's_portfolio.com</title>
+    <meta charset='UTF-8'>
+    <style>
+      body{ background-color: ivory; }
+      body{ text-align: center;}
+      body{ font-size: 10px ;}
+      body{ font-family: monospace;}
+      img{ width: 400px;
+         border-radius: 10px;
+         display: block;
+         margin: 0 auto 15px;}
+      h1{ font-family: serif;}
+      h1{ font-weight: 500;}
+      h2{font-family: Arial, Helvetica, sans-serif;}
+      h2{font-weight: 300;}
+      button{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+            background-color: black;
+            padding: 15px 15px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            }
+      p{font-family: Arial, Helvetica, sans-serif;}
+      p{font-weight: 100;}
+@keyframes show-up {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+      button {
+    animation: show-up 1s ease;
+      }
+      
+      @keyframes show-up {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+             }
+      img {
+    animation: show-up 1s ease;
+      }
+      @keyframes show-down {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+      }
+      h1 {
+    animation: show-down 1s ease;
+      }
+      @keyframes from-left {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes from-right {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    animation: from-left 1s ease;
+}
+
+p {
+    animation: from-right 1s ease;
+      }
+      
+      </style>
+  </head>
+  <body>
+    <h1> Hello alya</h1>
+    <h2> ini website khusus untuk kamu</h2>
+    <p>selamat datang di website html buatan adhi</p>
+    <img src='file_000000002b7081fa9fe19a90d6764bb7.png'>
+    <button onclick="window.location.href='page2.html'">
+      Coba Click
+      <a href="page2.html">
+    <button>Coba Click</button>
+      </a>
+    </button>
+  </body>
+</html>

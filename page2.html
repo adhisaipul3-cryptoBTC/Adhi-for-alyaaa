@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>alyaa ku sayang</title>
+    <style>
+        body {
+            background-color: ivory;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        #imageModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #imageModal img {
+            max-width: 90%;
+            max-height: 90%;
+            width: auto;
+            height: auto;
+        }
+      h1{font-family: monospace;
+         font-size: 30;
+        font-weight: 800;}
+      h2{font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;}
+
+@keyframes show-down {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+      }
+      h1 {
+    animation: show-down 1s ease;
+      }
+      @keyframes show-up {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.gallery img {
+    animation: show-up 1s ease both;
+}
+
+.gallery img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.gallery img:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.gallery img:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.gallery img:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.gallery img:nth-child(5) {
+    animation-delay: 0.8s;
+
+  .gallery img:nth-child(6) {
+    animation-delay: 0.10s;
+}}
+      
+    </style>
+</head>
+
+<body>
+
+    <h1>lihat wajah cantik ini</h1>
+  <p> senyum yang indah kan??</p>
+    <div class="gallery">
+        <img src="file_00000000597c81fa820869d91760dd7f.png" onclick="openImage(this.src)">
+        <img src="file_0000000091248207b664adeb3991e9d9.png" onclick="openImage(this.src)">
+        <img src="file_000000002b7081fa9fe19a90d6764bb7.png" onclick="openImage(this.src)">
+        <img src="file_000000003a3c8211a68df5355304e652.png" onclick="openImage(this.src)">
+        <img src="file_00000000d974820ba6c5bb2a63580cd9.png" onclick="openImage(this.src)">
+        <img src="file_000000008a88820784f1418604cba459.png" onclick="openImage(this.src)">
+    </div>
+
+    <div id="imageModal" onclick="closeImage()">
+        <img id="fullImage">
+    </div>
+
+    <script>
+        function openImage (src) {
+            document.getElementById("imageModal").style.display = "flex";
+            document.getElementById("fullImage").src = src;
+        }
+
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+      
+      <a href="index.html">
+        <button>Back</button>
+      
+    </script>
+
+
+</body>
+</html>
